@@ -7,7 +7,11 @@ def primary():
   f.close()
   last = 13
   rnd = random.randint(0, last)
-  print(quotes[rnd])
+  tmp = random.sample(quotes,2)  
+  for i in tmp:
+    print(i,end="")
 
+  #print(quotes[rnd])
+  
 if __name__== "__main__":
   primary()
